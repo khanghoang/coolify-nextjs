@@ -48,6 +48,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next /.next
 
 USER nextjs
 
+ENV PORT 8080
 EXPOSE 8080
 
 CMD ["npm", "run", "start"]
